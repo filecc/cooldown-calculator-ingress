@@ -56,6 +56,7 @@ function resetOne(id){
 }
 
 function calculate(){
+  hacks = 4;
   for (let i = 0; i < modChoose.length; i++) {
   const element = modChoose[i];
 
