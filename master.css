@@ -61,10 +61,10 @@ h3, h6{
 .containerMod{
     background-color: #F1FAEE;
     border-radius: .7rem;
-  
     padding: 1rem;
     max-width: 60vw;
     box-shadow: .3rem 0.2rem .5rem  #1D3557;
+    
 }
 
 
@@ -186,7 +186,7 @@ margin-right: .5rem;
 }
 
 .dark .result{
-    background-color: #457B9D;
+    
     color: white;
   
 }
@@ -196,5 +196,6 @@ margin-right: .5rem;
 @media screen and (max-width: 600px){
     .containerMod{
         max-width: 80vw;
+        margin-top: .5rem !important;
     }
 }
