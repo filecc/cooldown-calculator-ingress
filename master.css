@@ -1,5 +1,5 @@
 body{
-    min-height: 100vh; 
+    min-height: 100vh;
 }
 
 .site{
@@ -8,8 +8,8 @@ body{
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     min-height: 90vh;
-    text-align: center;  
-    transition: 1 all ease; 
+    text-align: center;
+    transition: 1 all ease;
 }
 
 .title {
@@ -53,10 +53,15 @@ h1{
     font-size: 5vw;
 }
 
+h5{
+/*    color: #457B9D;*/
+    font-weight: 400;
+}
+
 h3, h6{
     color: #457B9D;
     font-weight: 400;
-    
+
 }
 .containerMod{
     background-color: #F1FAEE;
@@ -64,7 +69,7 @@ h3, h6{
     padding: 1rem;
     max-width: 60vw;
     box-shadow: .3rem 0.2rem .5rem  #1D3557;
-    
+
 }
 
 
@@ -107,7 +112,7 @@ margin-right: .5rem;
 
 
 .footer{
-    min-height: 10vh;
+    min-height: 18vh;
     min-width: 100%;
     background-color: #457b9d ;
     display: flex;
@@ -116,18 +121,18 @@ margin-right: .5rem;
     align-items: center;
     align-content: center;
     border: none;
-    
+
 }
 
 .footer a{
     color: #F1FAEE;
     margin: .3rem;
     text-decoration: none;
-   
+
 }
 
 .footer a:hover{
-    color: #1D3557; 
+    color: #1D3557;
 }
 
 .footer p {
@@ -136,7 +141,7 @@ margin-right: .5rem;
 }
 
 .result{
-    
+
     max-width: 80vw;
     border-radius: .7rem;
     margin-top: 2rem;
@@ -165,7 +170,7 @@ margin-right: .5rem;
 }
 .dark h3, .dark h6{
     color: #F1FAEE;
-  
+
 }
 
 .dark .calculate{
@@ -175,7 +180,7 @@ margin-right: .5rem;
 
  .dark .title {
     color: #F1FAEE ;
- }   
+ }
 
  .dark .resetOne{
     color: #F1FAEE;
@@ -186,9 +191,9 @@ margin-right: .5rem;
 }
 
 .dark .result{
-    
+
     color: white;
-  
+
 }
 
 

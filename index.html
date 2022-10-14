@@ -24,37 +24,41 @@
         </div>
         <i id="moon"  class="bi bi-moon-fill hidden" ></i>
     </div>
-      
-   
-    
-    <h1 class="title">Cooldown Calculator</h1> 
+
+
+
+    <h1 class="title">Ingress</h1>
+    <p>
+    <h1 class="title">Cooldown Calculator</h1>
+    <br>
+
     <fieldset className="friendOrEnemyContainer">
-    
       <div class="friendOrEnemy">
+        <h5>Portal status</h5>
         <input type="radio" id="friend" name="friendOrEnemy" value="friend" checked>
-        <label for="friendOrEnemy">Friend</label>
+        <label for="friendOrEnemy">Friendly</label>
         <input type="radio" id="enemy" name="friendOrEnemy" value="enemy">
-        <label for="friendOrEnemy">Enemy</label>
+        <label for="friendOrEnemy">Enemy/Neutral</label>
       </div>
-  
-  </fieldset>
-      <div class="container containerMod d-flex flex-wrap align-items-center justify-content-center mt-5">
-        <div class="container d-flex align-items-center justify-content-between mx-0 p-0"><h6>Mod 1 </h6> 
+    </fieldset>
+
+    <div class="container containerMod d-flex flex-wrap align-items-center justify-content-center mt-5">
+        <div class="container d-flex align-items-center justify-content-between mx-0 p-0"><h6>Mod 1 </h6>
           <button onclick="resetOne('mod1')" class="btn resetOne"><i class="bi bi-trash2-fill"></i></button>
         </div>
-        
+
         <select id="mod1" class="form-select mb-2" aria-label="Default select example">
             <option value="none" selected>None</option>
-            <option value="chs" >Common Heat Sink</option>  
+            <option value="chs" >Common Heat Sink</option>
             <option value="rhs" >Rare Heat Sink</option>
             <option value="vrhs" >Very Rare Heat Sink</option>
             <option value="cmh" >Common Multi Hack</option>
             <option value="rmh" >Rare Multi Hack</option>
             <option value="vrmh" >Very Rare Multi Hack</option>
           </select>
-          
-        
-          <div class="container d-flex align-items-center justify-content-between mx-0 p-0"><h6>Mod 2 </h6> 
+
+
+          <div class="container d-flex align-items-center justify-content-between mx-0 p-0"><h6>Mod 2 </h6>
             <button onclick="resetOne('mod2')" class="btn resetOne"><i class="bi bi-trash2-fill"></i></button>
           </div>
           <select id="mod2" class="form-select mb-2" aria-label="Default select example">
@@ -67,7 +71,7 @@
             <option value="vrmh" >Very Rare Multi Hack</option>
           </select>
 
-          <div class="container d-flex align-items-center justify-content-between mx-0 p-0"><h6>Mod 3 </h6> 
+          <div class="container d-flex align-items-center justify-content-between mx-0 p-0"><h6>Mod 3 </h6>
             <button onclick="resetOne('mod3')" class="btn resetOne"><i class="bi bi-trash2-fill"></i></button>
           </div>
           <select id="mod3" class="form-select mb-2" aria-label="Default select example">
@@ -80,7 +84,7 @@
             <option value="vrmh" >Very Rare Multi Hack</option>
           </select>
 
-          <div class="container d-flex align-items-center justify-content-between mx-0 p-0"><h6>Mod 4 </h6> 
+          <div class="container d-flex align-items-center justify-content-between mx-0 p-0"><h6>Mod 4 </h6>
             <button onclick="resetOne('mod4')" class="btn resetOne"><i class="bi bi-trash2-fill"></i></button>
           </div>
           <select id="mod4" class="form-select mb-2" aria-label="Default select example">
@@ -94,26 +98,28 @@
           </select>
     </div>
 
-    
-    <div class="container d-flex align-items-center justify-content-center mt-2 buttonContainer">  
+
+    <div class="container d-flex align-items-center justify-content-center mt-2 buttonContainer">
       <button onclick=takeInput() class="btn calculate"><i class="bi bi-play-fill"></i> Calculate</button>
       <button onclick=reset() class="btn reset"><i class="bi bi-trash-fill"></i> Reset all</button>
    </div>
 
    <div id="resultBox" class="result container align-items-center justify-content-center hidden">
     <p>Cooldown: <span id="cooldown">0</span> seconds</p>
-    <p>Hack before burnout: <span id="hackBeforeBurnout">0</span></p>
+    <p>Hacks before burnout: <span id="hackBeforeBurnout">0</span></p>
     <p>Minimum time to burnout: <span id="minute">0</span> minute and <span id="second">0</span>  seconds</p>
-  
+
    </div>
-   
+
   </main>
   <footer class="footer ">
+    <p>100% Unofficial fansite</p>
+    <p>Not affiliated with Ingress or Niantic</p>
     <p>Made with <i class="bi bi-balloon-heart-fill"></i> by filecc  </p>
-    <span><a href="https://github.com/filecc" target="_blank"><i class="bi bi-github"></i></a> <a href="https://www.instagram.com/filecc" target="_blank"><i class="bi bi-instagram"></i></a> | </a><a class="coffee" href="https://paypal.me/filecc?country.x=IT&locale.x=it_IT" target="_blank"> buy me a coffe <i class="bi bi-cup-hot-fill"></i></a></span> 
+    <span><a href="https://github.com/filecc" target="_blank"><i class="bi bi-github"></i></a> <a href="https://www.instagram.com/filecc" target="_blank"><i class="bi bi-instagram"></i></a> | </a><a class="coffee" href="https://paypal.me/filecc?country.x=IT&locale.x=it_IT" target="_blank"> buy me a coffe <i class="bi bi-cup-hot-fill"></i></a></span>
    </footer>
-  
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script src="index.js" charset="utf-8"></script>
 </body>
 </html>
