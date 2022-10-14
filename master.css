@@ -114,6 +114,7 @@ margin-right: .5rem;
 .footer{
     min-height: 18vh;
     min-width: 100%;
+    padding-bottom: .5rem;
     background-color: #457b9d ;
     display: flex;
     flex-direction: column;
