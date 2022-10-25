@@ -18,4 +18,4 @@ There is a night mode that matches your device preference.
 Feel free to review the entire project. Every feedback will be appreciated.
 
 ## Legal things
-I'm not associated in any ways with Ingress or Niantic. This project is just for fun and Niantic Lab owns all the rights.
+I'm not associated in any way with Ingress or Niantic. This project is just for fun and Niantic Lab owns all the rights.
