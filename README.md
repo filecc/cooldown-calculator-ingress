@@ -11,11 +11,15 @@ First you have to choose the portal status: FRIENDLY or ENEMY/NEUTRAL (by defaul
 Then, you can choose every Mod you prefer (multi-hack or heat-sink), in the option menu.
 You can delete all the values inserted by pressing the "Reset All" button or you can delete a single value by tapping the trash icon next to a Mod field.
 
+The page automaticaly adapts accordingly to eventual in-game events that may affect cooldown timings and number of hacks.
+
 ## Other facts
 There is a night mode that matches your device preference.
 
 ## Tips
 Feel free to review the entire project. Every feedback will be appreciated.
 
+You may open an issue or pull request in case of any suggestion or report. Contributors can be found on telegram as well as @filecc and @Danynad.
+
 ## Legal things
-I'm not associated in any way with Ingress or Niantic. This project is just for fun and Niantic Lab owns all the rights.
+I'm not associated in any way with Ingress or Niantic. This project is just for fun and Niantic Labs owns all the rights.
