@@ -20,8 +20,9 @@ let eventName = "Event Name"
 let coolDownEvent_friend = 90;
 let coolDownEvent_enemy = 150;
 let hacksEvent = 40;
-let event_start = "2022-11-09T07:30:00";
-let event_end = "2022-11-17T18:30:00";
+let event_start = "2025-11-09T07:30:00";
+let event_end = "2025-11-17T18:30:00";
+let eventLink = "https://www.google.com";
 
 
 
@@ -179,7 +180,7 @@ function isDateInRange() {
   document.getElementById("eventName").innerText = eventName;
   document.getElementById("startDate").innerText = "Start: " + start_date.toDateString() + " - " + start_date.getHours() +":"+start_date.getMinutes();
   document.getElementById("endDate").innerText = "End: " +  end_date.toDateString()+ " - " + end_date.getHours() +":"+end_date.getMinutes();
-
+  document.getElementById("eventLink").setAttribute("href", eventLink);
 
   if ((curr_date >= start_date) && (curr_date <= end_date)) {
     let in_range = true;
@@ -188,7 +189,7 @@ function isDateInRange() {
     let in_range = false;
     return in_range;
   }
-
+  
 }
 
 function closeAlert(){
@@ -198,7 +199,7 @@ function closeAlert(){
 if (isDateInRange()) {
   document.getElementById("event").classList.remove("hidden");
   document.getElementById("containerEvent").classList.remove("hidden");
-
+  
 }
 
     let end = new Date(event_end);
