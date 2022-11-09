@@ -20,7 +20,7 @@ let eventName = "Event Name"
 let coolDownEvent_friend = 90;
 let coolDownEvent_enemy = 150;
 let hacksEvent = 40;
-let event_start = "2022-11-15T07:30:00";
+let event_start = "2022-11-09T07:30:00";
 let event_end = "2022-11-17T18:30:00";
 
 
@@ -188,7 +188,7 @@ function isDateInRange() {
     let in_range = false;
     return in_range;
   }
-  
+
 }
 
 function closeAlert(){
@@ -198,7 +198,7 @@ function closeAlert(){
 if (isDateInRange()) {
   document.getElementById("event").classList.remove("hidden");
   document.getElementById("containerEvent").classList.remove("hidden");
-  
+
 }
 
     let end = new Date(event_end);
