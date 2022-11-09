@@ -1,8 +1,8 @@
 /*
     Cooldown Calculator for Ingress
-    13.10.2022
+    09.11.2022
     made by @filecc https://github.com/filecc
-    contrib by @Danynad https://github.com/ynad
+    idea by @Danynad https://github.com/ynad
     released under GPL-3.0 license
     source code: https://github.com/filecc/cooldown-calculator-ingress
     github-pages: https://filecc.github.io/cooldown-calculator-ingress
@@ -16,12 +16,12 @@ let minutes = 0;
 let seconds = 0;
 
 // event specific timing and date - single event range atm
-let eventName = "Event Name"
+let eventName = "Back to 90s (of cooldown)"
 let coolDownEvent_friend = 90;
 let coolDownEvent_enemy = 150;
 let hacksEvent = 40;
-let event_start = "2025-11-09T07:30:00";
-let event_end = "2025-11-17T18:30:00";
+let event_start = "2022-11-09T08:00:00";
+let event_end = "2022-11-11T18:00:00";
 let eventLink = "https://www.google.com";
 
 
@@ -189,7 +189,7 @@ function isDateInRange() {
     let in_range = false;
     return in_range;
   }
-  
+
 }
 
 function closeAlert(){
@@ -199,7 +199,7 @@ function closeAlert(){
 if (isDateInRange()) {
   document.getElementById("event").classList.remove("hidden");
   document.getElementById("containerEvent").classList.remove("hidden");
-  
+
 }
 
     let end = new Date(event_end);
