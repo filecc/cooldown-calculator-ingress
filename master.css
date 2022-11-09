@@ -12,6 +12,16 @@ body{
     transition: 1 all ease;
 }
 
+.eventNotify{
+    background-color: gold;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    z-index: 100;
+}
+
 .title {
     color: #1D3557;
 }
@@ -154,6 +164,95 @@ margin-right: .5rem;
     transition: 1 all ease;
 }
 
+#event{
+  
+    max-width: 100vw;
+    height: auto;
+    background-color: gold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#event button{
+    border: none;
+    background: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: .2rem 1rem;
+    z-index: 100;
+}
+
+li:first-child{
+    list-style-type:none;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* #eventNotify{
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+
+.btnContainerEvent{
+    padding: .5rem;
+    position: absolute;
+}
+#eventNotify {
+    align-items: center;
+    background-image: linear-gradient(144deg,#AD7FE2, #2D4BC9 50%,#629D59);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all .3s;
+   
+   }
+   
+   #eventNotify:active,
+   #eventNotify:hover {
+    outline: 0;
+   }
+   
+   #eventNotify span {
+    background-color: rgb(5, 6, 45);
+    padding: 12px 20px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+   }
+   
+   #eventNotify:hover span {
+    background: none;
+   }
+   
+   #eventNotify:active {
+    transform: scale(0.9);
+   }
+
 
 /* DARK MODE */
 
@@ -205,3 +304,5 @@ margin-right: .5rem;
         margin-top: .5rem !important;
     }
 }
+
+
