@@ -20,9 +20,9 @@ let eventName = "Back to 90s (of cooldown)"
 let coolDownEvent_friend = 90;
 let coolDownEvent_enemy = 150;
 let hacksEvent = 40;
-let event_start = "2022-11-09T08:00:00";
-let event_end = "2022-11-11T18:00:00";
-let eventLink = "https://www.google.com";
+let event_start = "2022-11-09T08:01:00";
+let event_end = "2022-11-11T18:01:00";
+let eventLink = "https://ingress.com/news/";
 
 
 
