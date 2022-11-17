@@ -5,6 +5,8 @@
 Hello everyone,
 this is a first attempt on a Ingress Cooldwon Calculator, made after a specific request by a dear friend of mine.
 
+See app at https://filecc.github.io/cooldown-calculator-ingress/
+
 ## What to know
 The Web App is made with JS, HTML and CSS.
 First you have to choose the portal status: FRIENDLY or ENEMY/NEUTRAL (by default, FRIENDLY value is selected).
