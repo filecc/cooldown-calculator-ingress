@@ -113,8 +113,13 @@ function calculate() {
     }
   }
 
-  modChoose.sort().reverse();
+  // filter and split arrays of mods: cooldown and hack
+  let coolMod = modChoose.filter((el) => el > 0);
   let hacksMod = modChoose.filter((el) => el < 0);
+  // order from bigger to smaller
+  coolMod.sort((a,b)=>b-a);
+  // order from smaller to bigger (negative values)
+  hacksMod.sort((a,b)=>a-b);
 
   if (document.getElementById("friend").checked) {
     // if actual time is in event timeframe, set proper settings
@@ -123,8 +128,6 @@ function calculate() {
     } else {
       coolDown = 180;
     }
-    let newCooldown = 0;
-    let newHacks = 0;
   } else {
     if (isDateInRange()) {
       coolDown = coolDownEvent_enemy;
@@ -133,26 +136,23 @@ function calculate() {
     }
   }
 
-  for (let i = 0; i < modChoose.length; i++) {
-    const element = modChoose[i];
-    if (element >= 0) {
-      if (i == 0) {
-        newCooldown = (coolDown / 100) * element;
-        coolDown = coolDown - newCooldown;
-      } else {
-        newCooldown = (coolDown / 100) * (element / 2);
-        coolDown = coolDown - newCooldown;
-      }
-    } else if (element < 0) {
-      for (let index = 0; index < hacksMod.length; index++) {
-        const element = hacksMod[index] * -1;
-        if (index == 0) {
-          hacks = baseHacks + element;
-        } else {
-          newHacks = element / 2;
-          hacks += newHacks;
-        }
-      }
+  // cycle over cooldown mods
+  for (let i = 0; i < coolMod.length; i++) {
+    const element = coolMod[i];
+    if (i == 0) {
+      coolDown = coolDown - (element / 100 * coolDown);
+    } else {
+      coolDown = coolDown - (element / 2 / 100 * coolDown);
+    }
+  }
+
+  // cycle over hack mods
+  for (let i = 0; i < hacksMod.length; i++) {
+    const element = hacksMod[i] * -1;
+    if (i == 0) {
+      hacks = baseHacks + element;
+    } else {
+      hacks += element / 2;
     }
   }
 
