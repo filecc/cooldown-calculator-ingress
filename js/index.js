@@ -8,25 +8,57 @@
     github-pages: https://filecc.github.io/cooldown-calculator-ingress
 */
 
-let modChoose = [];
+
+(function () {
+ const selectDiv = document.getElementById('selectDiv');
+
+const buttons = document.querySelectorAll('.optionsContainer button');
+console.log(buttons)
+const handleClick = function (){
+  this.classList.toggle('bg-slate-300');
+  this.classList.toggle('bg-green-400');
+};
+buttons.forEach(element => {
+  element.addEventListener('click', handleClick);
+});
+
+
+
+/*  for(i = 1; i <= 4; i++){
+  const newSelect = createChild('select', {classes: ['w-full', 'mb-2', 'rounded', 'p-1', 'mx-auto'], name: 'modSelect' + i});
+  const newLabel = createChild('label', {classes: ['text-sm', 'mb-1', 'text-left'], text: 'Mod ' + i, for: 'mod'+i});
+  options.forEach(element => {
+    const newOption = createChild('option', {
+      name: element.value,
+      value: element.value,
+      text: element.text
+    });
+    newSelect.appendChild(newOption);
+   });
+  selectDiv.append(newLabel, newSelect);
+ } */
+ 
+}());
+
+/* let modChoose = [];
 let friend = "";
 let coolDown = 0;
 let burnout = 0;
 let minutes = 0;
-let seconds = 0;
+let seconds = 0; */
 
 // event specific timing and date - single event range atm
-let eventName = "Cool Event Name"
+/* let eventName = "Cool Event Name"
 let coolDownEvent_friend = 90;
 let coolDownEvent_enemy = 150;
 let hacksEvent = 40;
 let event_start = "2022-01-01T08:30:00";
 let event_end = "2022-01-01T18:30:00";
 let eventLink = "https://ingress.com/news/";
+ */
 
 
-
-function takeInput() {
+/* function takeInput() {
   modChoose = [
     document.getElementById("mod1").value,
     document.getElementById("mod2").value,
@@ -36,9 +68,9 @@ function takeInput() {
 
   document.getElementById("resultBox").classList.remove("hidden");
   calculate();
-}
+} */
 
-function reset() {
+/* function reset() {
   modChoose = [];
   coolDown = 180;
   hacks = 4;
@@ -49,9 +81,9 @@ function reset() {
   document.getElementById("mod4").value = "none";
   document.getElementById("resultBox").classList.add("hidden");
   document.getElementById("friend").checked = true;
-}
+} */
 
-function resetOne(id) {
+/* function resetOne(id) {
   switch (id) {
     case "mod1":
       document.getElementById("mod1").value = "none";
@@ -70,9 +102,9 @@ function resetOne(id) {
       break;
   }
   modChoose[id] = "none";
-}
+} */
 
-function calculate() {
+/* function calculate() {
   // if actual time is in event timeframe, set proper settings
   if (isDateInRange()) {
     hacks = hacksEvent;
@@ -165,14 +197,14 @@ function calculate() {
   document.getElementById("minute").innerText = minutes;
   document.getElementById("second").innerText = seconds;
 }
-
-function secondsToMinute(time) {
+ */
+/* function secondsToMinute(time) {
   minutes = Math.floor(time / 60);
   seconds = Math.floor(time - minutes * 60);
-}
+} */
 
 // compare current date and pre-defined event start and end dates, returns boolean value if current date is in event timeframe
-function isDateInRange() {
+/* function isDateInRange() {
   let start_date = new Date(event_start);
   let end_date = new Date(event_end);
   let curr_date = new Date(); // current time
@@ -190,19 +222,19 @@ function isDateInRange() {
     return in_range;
   }
 
-}
+} */
 
-function closeAlert(){
+/* function closeAlert(){
   document.getElementById("event").classList.toggle("hidden");
-}
+} */
 
-if (isDateInRange()) {
+/* if (isDateInRange()) {
   document.getElementById("event").classList.remove("hidden");
   document.getElementById("containerEvent").classList.remove("hidden");
 
-}
+} */
 
-    let end = new Date(event_end);
+    /* let end = new Date(event_end);
 
     let _second = 1000;
     let _minute = _second * 60;
@@ -256,3 +288,4 @@ if (
   document.getElementById("toggle-btn").checked = true;
   switchTheme();
 }
+ */
